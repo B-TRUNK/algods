@@ -12,15 +12,36 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 /*
  * 
  */
+
+
+int sum (int x ,int y) {
+    
+    
+    cout << "Enter First Number:";
+    cin >> x;
+    
+    cout << "Enter Second Number:";
+    cin >> y;
+
+    return (x + y);
+
+}
+
+
 int main(int argc, char** argv) {
     
-    cout << "Hello!" << endl;
+    int x , y;
+    
+    cout << sum(x ,y) << endl;
+    
+            
 
     return 0;
 }
