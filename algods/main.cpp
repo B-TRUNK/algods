@@ -19,11 +19,11 @@ using namespace std;
 /*
  * 
  */
-void main() {
+int main() {
     
     //array search
     int input = 0;
-    int index = 0;
+    int index = NULL;
     int inc = 0;
     char arr[] = {22 ,30 ,7 ,-3 ,97 ,101 ,0};
     
@@ -34,14 +34,19 @@ void main() {
     
         if (arr[inc] == input) {
             index = inc;
-            
             break;
-        }
-    
+        } 
     }
     
     
+    if (index != NULL) {
+        cout << "Number Exists at Index : " << inc << endl;
+    } else {
+        cout << "Number Doesn't Exist" << endl;
+    }
+    //end of array search
     
+    return 0;
     
 }
 
