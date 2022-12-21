@@ -15,6 +15,7 @@
 
 using namespace std;
 
+/*
 class Car {
 
 private:
@@ -91,10 +92,48 @@ public:
     
     
 };
+*/
 
+class Triangle {
+
+private:
+    
+    int base;
+    int height;
+    
+public:
+    
+    //Empty Constructor
+    Triangle () {
+        cout << "Print from Empty Constructor!" << endl;
+        base = 0;
+        height = 0;
+    }
+    
+    //Parameterized Constructor
+    Triangle (int a ,int b) {
+        base = a;
+        height = b;
+        cout << "This result is from the P Constructor! = " << endl;
+    }
+    
+    
+    void setBase_Height (int a, int b) {
+        base = a;
+        height = b;
+    }
+    
+    int getTriangleArea() {
+    
+        return 0.5 * base * height;
+    
+    }
+    
+};
 
 int main() {
     
+    /*
     Car car;
     
     car.setName("Audi" ,5);
@@ -103,7 +142,11 @@ int main() {
     car.setModel(2021);
     
     car.print();
-    
+    */     
+    //int a = 5 ; int b = 10;
+    Triangle t(5 ,9);
+    //t.setBase_Height(a ,b);
+    cout << "Triangle Area = " << t.getTriangleArea() << " cm^2" << endl ;
 
     return 0;
 }
